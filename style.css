@@ -1,0 +1,119 @@
+:root {
+    --verde-primario: #2d5a27;
+    --verde-secundario: #4caf50;
+    --verde-fundo: #f0f7f0;
+    --laranja-alerta: #f39c12;
+    --azul-agua: #2196f3;
+    --branco: #ffffff;
+    --texto: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--verde-fundo);
+    color: var(--texto);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 8px solid var(--verde-primario);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--verde-primario);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--verde-primario);
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--verde-primario);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--verde-secundario);
+    transform: translateY(-2px);
+}
+
+#resultado {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.alerta-agua {
+    background-color: #e3f2fd;
+    border-left: 6px solid var(--azul-agua);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.alerta-sol {
+    background-color: #fff3e0;
+    border-left: 6px solid var(--laranja-alerta);
+    padding: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999;
+}
