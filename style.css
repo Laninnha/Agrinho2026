@@ -24,57 +24,6 @@ body {
     overflow: hidden;
 }
 
-.background-decor {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.plant {
-    position: absolute;
-    border-radius: 55% 55% 60% 60%;
-    background: linear-gradient(180deg, #4caf50 0%, #2d6b2b 100%);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.plant::before,
-.plant::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.85);
-}
-
-.plant::before {
-    width: 32px;
-    height: 32px;
-    top: 18%;
-    left: 18%;
-}
-
-.plant::after {
-    width: 22px;
-    height: 22px;
-    bottom: 20%;
-    right: 16%;
-}
-
-.plant-left {
-    left: 10%;
-    bottom: 6%;
-    width: 120px;
-    height: 160px;
-    transform: rotate(-6deg);
-}
-
-.plant-right {
-    right: 10%;
-    bottom: 10%;
-    width: 100px;
-    height: 140px;
-    transform: rotate(8deg);
-}
 
 .container {
     max-width: 500px;
